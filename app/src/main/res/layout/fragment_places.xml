@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".NewsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SERVICES"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="top"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Financial Service" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Transport &amp; Travel" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Local Services" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Shops &amp; Gifts" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Education" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Helthcare" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Refill Gas" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="News" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Entertainment" />
+
+
+
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Frequent"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="M-Shwari"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="KCB Mpesa"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Global Pay"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Pochi La Biashara"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Entertainment"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Financial Services"
+                android:layout_marginRight="5dp"/>
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Discover More"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mBtnDstv"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="DSTV" />
+
+            <Button
+                android:id="@+id/mBtnMovies"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="MOVIES" />
+
+            <Button
+                android:id="@+id/mBtnGotv"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="GOTV" />
+
+            <Button
+                android:id="@+id/mBtnNtsa"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="NTSA" />
+
+            <Button
+                android:id="@+id/mBtnBolt"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="BOLT" />
+
+            <Button
+                android:id="@+id/mBtnRubis"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="RUBIS" />
+
+            <Button
+                android:id="@+id/mBtnKopa"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:text="KOPA" />
+
+            <Button
+                android:id="@+id/mBtnInsurance"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="INSURANCE" />
+
+            <Button
+                android:id="@+id/mBtnYoutube"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="YOUTUBE" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Yes" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Yes" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="Yes" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

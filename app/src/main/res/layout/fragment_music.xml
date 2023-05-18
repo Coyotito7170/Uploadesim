@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MusicFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TRANSACT"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/money" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/currency" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="FINANCIAL SERVICES"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:gravity="bottom"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="256dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="KCB Services"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="234dp"
+                            android:layout_height="47dp"
+                            android:layout_below="@id/t1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="@dimen/cardview_default_elevation"
+                            android:text="Explore financial services in your phone\ by just a click in your phone "
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/mTvKcb"
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/t1"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginLeft="300dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="top"
+                            android:layout_marginEnd="9dp"
+                            android:layout_marginBottom="6dp"
+                            android:layout_toEndOf="@+id/t1"
+                            android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                            android:text="View All"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgHelb"
+                            android:layout_width="137dp"
+                            android:layout_height="71dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="30dp"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/kcb" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/d1"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/mTvTransport"
+                            android:layout_width="256dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="Equity"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="222dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@id/mTvTransport"
+                            android:layout_marginLeft="10dp"
+
+                            android:layout_marginTop="10dp"
+                            android:padding="@dimen/cardview_default_elevation"
+                            android:text="Explore financial services in your phone\ by just a click in your phone "
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/mTvEquity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="300dp"
+                            android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                            android:text="View All"
+                            android:gravity="top"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:id="@+id/mImgTransport"
+                            android:layout_width="144dp"
+                            android:layout_height="72dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="14dp"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/equity" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/d2"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/mTvEducation"
+                            android:layout_width="256dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="Absa"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="226dp"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/mTvEducation"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Explore financial services in your phone\ by just a click in your phone "
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/mTvAbsa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="300dp"
+                            android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                            android:text="View All"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="6dp"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/absa" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/d3"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/mTvGas"
+                            android:layout_width="256dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="DTB"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="233dp"
+                            android:layout_height="52dp"
+                            android:layout_below="@id/mTvGas"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Explore financial services in your phone\ by just a click in your phone "
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/mTvDtb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="300dp"
+                            android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                            android:text="View All"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="30dp"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/dtb" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

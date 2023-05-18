@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavFragment">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mFloatProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/baseline_person_24"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/mTvProfile"
+        android:layout_width="178dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="Profile"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Financial Services"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="234dp"
+                        android:layout_height="47dp"
+                        android:layout_below="@id/t1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="@dimen/cardview_default_elevation"
+                        android:text="Explore financial services in your phone\ by just a click in your phone "
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/mTvFinancialServices"
+                        android:layout_width="84dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/t1"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="42dp"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_toEndOf="@+id/t1"
+                        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                        android:gravity="top"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgHelb"
+                        android:layout_width="137dp"
+                        android:layout_height="71dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/mpeza" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/d1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/mTvTransport"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Transport &amp; Travel"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="222dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/mTvTransport"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_marginTop="10dp"
+                        android:padding="@dimen/cardview_default_elevation"
+                        android:text="Travel across the country by booking \ at your comfort zone"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/mBtnTransport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                        android:text="View All"
+                        android:gravity="top"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/mImgTransport"
+                        android:layout_width="144dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="14dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/travel" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/d2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/mTvEducation"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Education"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="226dp"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/mTvEducation"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Learning information and funds made easier"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/mBtnEducation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="6dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/education" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/d3"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/mTvGas"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Refil Cooking Gas"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="233dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@id/mTvGas"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Your refilled gas is brougt to your doorstep"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/mBtnGas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/gas" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/d4"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/mTvNews"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="News"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mTvNews"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="All your favourite news podcasts brought together for easy browsing"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/mBtnNews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/news" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/d5"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/mTvEntertainment"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Entertainment"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="238dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/mTvEntertainment"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Your favourite Tv shows for enjoyment anywhere "
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/mBtnEntertainment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/entertainment" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/d6"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/mTvLocalServices"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Local Services"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mTvLocalServices"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="For local empowernment"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/mBtnServices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/local" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/d7"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/mTvShops"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Shops &amp; Gifts"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mTvShops"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Shop at your comfort"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/mBtnShops"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+
+                        android:maxHeight="100dp"
+                        android:src="@drawable/shop" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/d8"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/mTvHealthcare"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Get Helthcare"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="238dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/mTvHealthcare"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Contact your doctor and get to know your health status"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/mBtnHealth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/health" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/d9"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/mTvMyUpload"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="My Upload"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mTvMyUpload"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Know more about Upload"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/mBtnUpload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/upload" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "835439697146",
+    "project_id": "esimupload",
+    "storage_bucket": "esimupload.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835439697146:android:60d2ff6a46d95cbfb77d43",
+        "android_client_info": {
+          "package_name": "com.example.uploadesim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835439697146-jucvmj2tq1mphrlnbh9f167jg509d4qb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdtKvJdEpTsd2lVN5dIzb3dx6lhjJA6vM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835439697146-jucvmj2tq1mphrlnbh9f167jg509d4qb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

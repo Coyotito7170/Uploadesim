@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/mTvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="29dp"
+        android:text="Sign in"
+        android:textColor="@color/colorBlack"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mEdtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        android:paddingLeft="20sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/mTvForgotPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mEdtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_security"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="*****"
+        android:inputType="textWebPassword"
+        android:paddingLeft="20sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtEmail" />
+
+    <TextView
+        android:id="@+id/mTvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="394dp"
+        android:layout_marginEnd="16dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/mBtnSignin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_bg"
+        android:text="SIGN IN"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:backgroundTint="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTvForgotPassword" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="23dp"
+        android:text="Dont Have an Account?"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="4dp"
+        android:text="Sign up"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/mTvContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="or continue with"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mBtnSignin" />
+
+    <Button
+        android:id="@+id/mBtnGoogle"
+        android:layout_width="133dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="93dp"
+        android:background="@drawable/btn_bg"
+        android:text="Google"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:backgroundTint="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/mTvViewHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mBtnSignin" />
+
+    <Button
+        android:id="@+id/mBtnFacebook"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="93dp"
+        android:background="@drawable/btn_bg"
+        android:text="Facebook"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:backgroundTint="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/mTvViewHome"
+        app:layout_constraintEnd_toEndOf="@+id/mBtnSignin"
+        app:layout_constraintStart_toEndOf="@+id/mTvViewProfile"
+        app:layout_constraintTop_toTopOf="@+id/mBtnSignin" />
+
+    <TextView
+        android:id="@+id/mTvViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="82dp"
+        android:text="View profile"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toEndOf="@+id/mBtnGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/mTvContinue" />
+
+    <TextView
+        android:id="@+id/mTvViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="View home"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/mTvViewProfile"
+        app:layout_constraintTop_toBottomOf="@+id/mTvViewProfile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

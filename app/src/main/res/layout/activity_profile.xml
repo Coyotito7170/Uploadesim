@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".ProfileActivity"
+    tools:visibility="visible">
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="194dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginEnd="130dp"
+        android:onClick="pickedPhoto"
+        app:layout_constraintBottom_toTopOf="@+id/mEdtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTvAddProfile"
+        app:srcCompat="@drawable/bb"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/mTvAddProfile"
+        android:layout_width="204dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:text="Account"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mEdtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="193dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="10dp"
+        android:text="Edwin Tito"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mEdtGmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/mEdtGmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="194dp"
+        android:layout_marginEnd="160dp"
+        android:text="titoedwin045@gmail.com"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtName" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="432dp"
+        android:layout_height="83dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtGmail">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mBtnHome"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/baseline_home_24"
+                    android:text="Home" />
+
+                <Button
+                    android:id="@+id/mBtnTransactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:drawableLeft="@drawable/baseline_compare_arrows_24"
+                    android:text="My Transactions"
+                    android:textColor="@color/colorBlack" />
+
+                <Button
+                    android:id="@+id/mBtnSpending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:drawableLeft="@drawable/timelapse_24"
+                    android:text="MySpendings"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="392dp"
+        android:layout_height="478dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTvSupport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUPPORT"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mBtnCallSupport"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:text="Call" />
+
+                <TextView
+                    android:id="@+id/mTvCallSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CALL FOR SUPPORT"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mBtnNetworkProvider"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_sim_card"
+                    android:text="My Net" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NETWORK PROVIDER WEBSITE"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mBtnSms"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_send"
+                    android:text="Sms" />
+
+                <TextView
+                    android:id="@+id/mTvSms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sms"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mBtnEmail"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_send"
+                    android:text="Email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EMAIL US"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOCIAL"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mBtnFacebook"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:text="Facebook" />
+
+                <TextView
+                    android:id="@+id/mTvFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACEBOOK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mBtnInstagram"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_send"
+                    android:text="Insta" />
+
+                <TextView
+                    android:id="@+id/mTvInstagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INSTAGRAM"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mBtnYoutube"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_slideshow"
+                    android:text="Tube" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YOUTUBE"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SETTINGS"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mBtnShare"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_share"
+                    android:text="Share" />
+
+                <TextView
+                    android:id="@+id/mTvShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHARE APP LINK"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mBtnLogOut"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_logout_24"
+                    android:text="Log" />
+
+                <TextView
+                    android:id="@+id/mTvLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOG OUT"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mTvAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ABOUT"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/mBtnRate"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_star_rate_24"
+                        android:text="Rate" />
+
+                    <TextView
+                        android:id="@+id/mTvRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RATE US ON PLAY STORE"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/mBtnTermsConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_file_copy_24"
+                        android:text="Documentation" />
+
+                    <TextView
+                        android:id="@+id/mTvTermsConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TERMS AND CONDITIONS"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/mBtnPrivacyPolicy"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_app_blocking_24"
+                        android:text="Trust" />
+
+                    <TextView
+                        android:id="@+id/mTvPrivacyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRIVACY POLICY"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
